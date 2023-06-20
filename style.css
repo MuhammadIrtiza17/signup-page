@@ -1,0 +1,248 @@
+body{
+    background-image: url("./images/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    margin: 2em;
+    background-color: #ff7978;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { 
+    color: hsl(0, 0%, 0%); 
+    font-weight: bold;
+ text-decoration: underline #dddfde;
+}
+footer{
+    position: absolute;
+    bottom: 1%;
+  left: 50%;
+  transform: translate(-50%);
+}
+main{
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     height: 30em;
+     width: 60em;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+.components{
+     width: 50%;
+     margin: 1em;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    text-align: center;
+    height:max-content;
+}
+button{
+    font-size: xx-small;
+}
+#formSub{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0.2em;
+    width: 70%;
+    height: 60%;
+    padding: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+ border-radius: 2%;
+ 
+    background-color: white;
+}
+#offer{
+     height: 4em;
+    margin-bottom: 2em;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+   border-radius: 5px;
+   border-style: none;
+   border-style:  none;
+   background-color:#5d54a3;
+   color: white;
+   box-shadow: 0px 5px 2px 0px #5d54a38e;
+}
+#learn{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 2%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1em;
+    margin-bottom: 0.5em;
+}
+
+#description{
+    width: 35em;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.7em;
+}
+#heading{
+    padding-top: 15%;
+    color: white;
+    padding-bottom: 15%;
+}
+input{
+    height:2.5em;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 1em;
+
+}
+
+#claim{
+    width: 100%;
+    height: 4em;
+    background-color: #37cc8a;
+    color: white;
+    border-style: none;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0px 5px 2px 0px #a6ddcb;
+
+}
+#claim:hover{
+    background-color: #63e4aa;
+
+}
+#warning {
+    color: rgb(189, 187, 187);
+    font-size: x-small;
+    align-items: center;
+
+}
+#try{
+    font-weight: bold;
+}
+#value{
+    color: #bfbbdb;
+}
+#term{
+    text-decoration: none;
+    color: red;
+}
+
+@media only screen and (max-width:956px){
+     main{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         align-content: center;
+         text-align: center;
+        width: 35em;
+        height: fit-content;
+        margin-top: 8em;
+     }
+     .components{
+         width: 30em;
+     }
+     #description{
+         width: 100%;
+
+     }
+     #heading{
+          padding-top:3em ;
+          padding-bottom: 2em;
+          color: white;
+
+     }
+     #formSub{
+        height: 20em;
+        margin-top: 1em;
+     }
+     #offer{
+        height: 5em;
+     }
+     footer{
+        position: absolute;
+        bottom: -45%;
+     }
+}
+
+@media only screen and (max-width:552px){
+
+ main{
+    width: 15em;
+    height: 35em;
+    /* position: relative; */
+    margin: 0 auto;
+    justify-content:space-around;
+ }
+#learn{
+    font-size: 1rem;
+    margin-bottom: 0em;
+}
+ #heading{
+    font-size: 0.6rem;
+    position: absolute;
+    top: 0%;
+    margin: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+#offer{
+    width: 80%;
+    height:6em;
+margin: 0 auto;
+margin-top: 0%;
+
+}
+ #form{
+     width: 15em;
+     height:auto;
+     margin-bottom: 0%;
+     position: absolute;
+     bottom: 0%;
+
+ }
+ input{
+    margin:0 auto;
+    margin-bottom: 0.2em;
+    height: 2.5em;
+    width: 98%;
+
+ }
+ footer{
+    position: absolute;
+    bottom: -10%;
+
+ }
+ #description{
+      width: 100%;
+      margin-top: 0%;
+      font-size: 0.6rem;
+      line-height: 2em;
+ }
+ .components{
+
+ }
+}
+
+.error{
+    width: 15px; 
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    display: none;
+}
+ .alert{
+    color: rgb(248, 74, 74);
+    font-size: x-small;
+    display: block;
+    margin-top: 0%;
+    display: none;
+text-align: right;}
+.inputDiv{
+    position: relative;
+} 
